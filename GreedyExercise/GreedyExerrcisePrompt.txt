@@ -1,0 +1,13 @@
+Consider the following time intervals:
+[9, 13)
+[5, 16)
+[8, 18)
+[8, 11)
+[1, 16)
+[4, 18)
+[19, 20)
+[16, 17)
+[2, 12)
+[11, 12)
+For these intervals, solve the problem stated on page 9 of Week 6 Greedy slides.
+You will then submit a txt file containing a single number: the number of intervals in your answer.
