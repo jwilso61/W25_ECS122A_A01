@@ -74,7 +74,7 @@ int compute_diameter(int n, Edge *T) {
     for (int i=1; i<=n; i++) {free(adj[i]);}
     free(adj);
     free(adjCount);
-
+    
     return bfs2.dist;
 }
 

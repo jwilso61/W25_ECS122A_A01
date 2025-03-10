@@ -1,0 +1,44 @@
+Consider the following denominations: 2, 7, 3
+Given total n = 16, solve the problem stated on page 9 of Week 7 slides.
+You will then submit a txt file containing a list of numbers (separated by SPACES): OPT(i) for i=0 to n in order.
+So, there should be n+1 values in your file. If OPT(i)=inf, set it to -1 instead.
+
+Slide 9:
+    Define: OPT(v) = min number of coins to make change for v.
+    Goal:   OPT(V)
+    Multiway choice: To compute OPT(v),
+        1)  Select a coin of denomination c_i for some i.
+        2)  Select fewest coins to make change for v – c_i.
+    Bellman equation:
+
+            inf if v<0
+    OPT(v)= 0   if v=0
+            min(1<=i<=n) of {1+OPT(n-d_i)} if v>0
+
+    Running time: O(n V)
+
+V = target value
+n = 
+
+d = [2, 7, 3]
+n = 16
+
+[0 0 1 1 2 2 2 1 3 2 2 3 3 3 2 4 3] 
+
+OPT(0)  =               = 0
+OPT(1)  =               = 0
+OPT(2)  = 1             = 1
+OPT(3)  = 1 + OPT(2)    = 1
+OPT(4)  = min(1+OPT(2), 1+OPT(1)) = 2
+OPT(5)  = min(1+OPT(3), 1+OPT(2)) = 2
+OPT(6)  = min(1+OPT())              = 2
+OPT(7)  =               = 1
+OPT(8)  =               = 3
+OPT(9)  =               = 2
+OPT(10) =               = 2
+OPT(11) =               = 3
+OPT(12) =               = 3
+OPT(13) =               = 3
+OPT(14) =               = 2
+OPT(15) =               = 4
+OPT(16) =               = 3

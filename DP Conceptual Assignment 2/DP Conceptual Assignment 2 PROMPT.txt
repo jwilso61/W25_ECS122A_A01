@@ -1,0 +1,15 @@
+Consider the following two strings:
+s1 = BBAACA
+s2 = BBAACCC
+Solve the problem stated on page 5 of Week 8 slides using the penalties given on page 8.
+You will then submit a txt file containing a grid of numbers (separated by SPACES within a 
+row and NEW LINES for each new row): OPT(i, j) for i = 0 to |s1| as rows and j = 0 to |s2| as columns.
+So, there should be a (|s1| + 1) by (|s2| + 1) grid of values in your file. Page 8 contains an example 
+picture of this grid.
+
+
+
+P A L E T T E
+P A L – A T E
+1 gap, 1 mismatch
+(gap penalty = 2, mismatch penalty = 1)
